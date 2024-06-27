@@ -7,14 +7,15 @@ import axios from 'axios'
 import { useState, useRef,} from 'react'
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min'
 
+import H1 from '../../components/Title'
+import ContainerItens from '../../components/ContainerItens'
+import Button from '../../components/Button'
+
 import {
   Container,
   Image,
-  ContainerItens,
-  H1,
   InputLabel,
   Input,
-  Button,
 } from './styles'
 
 const App = () => {

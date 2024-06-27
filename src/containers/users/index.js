@@ -8,12 +8,13 @@ import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min'
 
+import H1 from '../../components/Title'
+import ContainerItens from '../../components/ContainerItens'
+import Button from '../../components/Button'
+
 import {
   Container,
   Image,
-  ContainerItens,
-  H1,
-  Button,
   User
 } from './styles'
 
@@ -23,7 +24,7 @@ const Users = () => {
 
 
   useEffect(() => {
-    
+
     async function fetchUsers() {
       const { data: allUsers } = await axios.get('http://localhost:3001/users');
 
@@ -37,7 +38,7 @@ const Users = () => {
 
 
   async function deleteUser(userId) {
-    await axios.delete (`http://localhost:3001/users/${userId}`)
+    await axios.delete(`http://localhost:3001/users/${userId}`)
 
     const newUsers = users.filter(user => user.id !== userId);
 
@@ -53,7 +54,7 @@ const Users = () => {
     <Container>
       <Image alt='logo-image' src={Avatar} />
 
-      <ContainerItens>
+      <ContainerItens isBlur={true}>
 
         <H1>
           Usuários
@@ -68,7 +69,7 @@ const Users = () => {
           ))}
         </ul>
 
-        <Button onClick={Back}> <img alt='seta' src={Seta} /> Voltar</Button>
+        <Button isBack= {true} onClick={Back}> <img alt='seta' src={Seta} /> Voltar</Button>
 
       </ContainerItens>
 

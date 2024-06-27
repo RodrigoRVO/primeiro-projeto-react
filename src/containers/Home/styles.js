@@ -17,30 +17,6 @@ export const Image = styled.img`
 
 `;
 
-export const ContainerItens = styled.div`
-    background: linear-gradient(
-        157.44deg,
-        rgba(255, 255, 255, 0.6) 0.84%,
-        rgba(255, 255, 255, 0.6) 0.85%,
-        rgba(255, 255, 255, 0.15) 100%
-        );
-    border-radius: 61px 61px 0px 0px ;
-    padding: 50px 36px;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-`;
-
-export const H1 = styled.h1`
-    color: #FFF;
-    text-align: center;
-    font-size: 34px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 80px;
-`;
-
 export const InputLabel = styled.p`
     color: #EEE;
     font-size: 18px;
@@ -68,31 +44,6 @@ export const Input = styled.input`
     margin-bottom: 34px;
 `;
 
-export const Button = styled.button`
-    width: 342px;
-    height: 74px;
-    margin-top: 130px;
-    border-radius: 14px;
-    border: none;
-    background: rgba(0, 0, 0, 0.80);
-    color: #FFF;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    cursor: pointer;
 
-    &:hover {
-        opacity: 0.8;
-    }
-
-    &:active {
-        opacity: 0.5;
-    }
-`
 
 
